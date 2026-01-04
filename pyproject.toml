@@ -1,0 +1,25 @@
+[project]
+name = "grafana-series1-week5"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "goh-chunlin",email = "chunlin@live.com.sg"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "grafana_series1_week5", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "pytest-responses (>=0.5.1,<0.6.0)"
+]
