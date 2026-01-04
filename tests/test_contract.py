@@ -46,7 +46,7 @@ def test_trace_integrity_contract(validate_o11y_headers):
     HOT PATH TEST: Ensures the 'Fragile Chain' isn't just present,
     but compliant with W3C standards.
     """
-    mock_trace_id = "4bf92f3577b34da6a3ce929d0e0e4736"
+    mock_trace_id = "deadbeef"
     validate_o11y_headers.add("GET", re.compile(r".*"), status=200)
 
     # Action
